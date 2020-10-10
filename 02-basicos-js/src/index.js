@@ -1,30 +1,13 @@
-const personajes = ['Goku', 'Vegeta', 'Trunks'];
+import { heroes } from './bases/data/heroes';
 
-// console.log( personajes[0]);
 
-const [ , , p3 ] = personajes;
+// find
+const getHeroeById = (id) => heroes.find( (heroe) => heroe.id === id );
 
-console.log(p3)
+console.log( getHeroeById(3).name );
 
-const returnaArreglo = () => {
-  return ['ABC', 123];
-}
 
-const [ letras, numeros ] = returnaArreglo();
+// filter
+const getHeroesByOwner = ( owner ) => heroes.filter( (heroe) => heroe.owner === owner );
 
-console.log( letras, numeros )
-
-// Tareas
-// 1. el primer valor del arr se llamara nombre
-// 2. se llamara setNombre
-const useState = ( valor ) => {
-  return [ valor, () => { console.log(`Hola Mundo ${valor}`) } ];
-}
-
-const arr = useState( 'Goku' );
-
-const [ nombre, setNombre ] = arr;
-
-console.log( nombre )
-
-setNombre();
+console.log(getHeroesByOwner('Marvel'))
