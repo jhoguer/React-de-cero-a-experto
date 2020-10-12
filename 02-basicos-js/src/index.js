@@ -1,28 +1,18 @@
 
-// const getImagenPromesa = () => new Promise( resolve => resolve('http://7sjhsdfgysdsnj.com/jasdnj'));
 
-// getImagenPromesa().then(console.log)
+const activo = true;
 
-const getImagen = async () => {
+// let mensaje = '';
 
-  try {
-    const apiKey = 'znwbvNOLnkEPXRn2Ohoq27pL5UVLQ9lf';
-    const resp = await fetch(`http://api.giphy.com/v1/gifs/random?api_key=${ apiKey }`);
-    const { data } = await resp.json();
+// if (activo ) {
+//   mensaje = 'Activo'
+// } else {
+//   mensaje = 'Inactivo'
+// }
 
-    const { url } =  data.images.original;
+// const mensaje = ( activo ) ? 'Activo' : 'Inactivo'
+// const mensaje = ( !activo ) ? 'Activo' : null
 
-    const img = document.createElement('img');
-    img.src = url;
-    document.body.append( img );
-  } catch (error) {
-    console.warn('Hay un error');
-  }
+const mensaje = activo && 'Activo';
 
-  
- 
-  
-}
-
-getImagen()
-
+console.log(mensaje);
