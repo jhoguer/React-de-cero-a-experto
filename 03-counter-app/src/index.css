@@ -12,4 +12,11 @@ button {
   padding: 10px;
   margin-right: 10px;
   font-size: 1.3rem;
+  background-color: burlywood;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+button:hover {
+  background-color: darkgrey;
 }
