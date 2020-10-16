@@ -19,7 +19,7 @@ describe('Pruebas en 05-funciones.js', () => {
 
   test('getUsuarioActivo debe recibir un nombre y retornar un obejto con ese nombre como username', () => {
     
-    const nombre = 'jhoguerrr';
+    const nombre = 'jhoguer';
 
     const userTest = {
       uid: 'ABC567',
