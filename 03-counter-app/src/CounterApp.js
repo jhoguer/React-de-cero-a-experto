@@ -37,7 +37,7 @@ CounterApp.propTypes = {
 }
 
 CounterApp.defaultProps = {
-  value: 0,
+  value: 10,
 }
 
 export default CounterApp;
