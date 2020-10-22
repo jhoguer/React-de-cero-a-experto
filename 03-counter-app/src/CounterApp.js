@@ -17,7 +17,7 @@ const CounterApp = ( { value = 10 } ) => {
   }
 
   const handleReset = () => {
-    setCounter(0);
+    setCounter(value);
   }
 
   return (
