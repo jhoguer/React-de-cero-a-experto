@@ -6,8 +6,12 @@ export const useFetchGifs = ( category ) => {
 
   const [state, setState] = useState({
     data: [],
-    loading: true
+    loading: true,
+    background: "background1"
   });
+
+  
+
 
   useEffect( () => {
 
@@ -16,8 +20,8 @@ export const useFetchGifs = ( category ) => {
 
         setState({
           data: imgs,
-          loading: false
-          
+          loading: false,
+          background: 'background3'          
         });
       })
   }, [category])
